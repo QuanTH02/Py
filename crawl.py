@@ -9,7 +9,7 @@ url = 'https://www.imdb.com/chart/top/?ref_=nv_mv_250'
 driver.get(url)
 
 row = driver.find_element(By.XPATH, '//*[@id="main"]/div/span/div/div/div[3]/table/tbody')
-
+#print length row
 print(len(row))
 
 driver.quit
